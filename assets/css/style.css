@@ -164,12 +164,13 @@ img {
 .hero-home h1 {
   margin: 0 0 10px;
   font-size: clamp(1.02rem, 1.28vw, 1.22rem);
-  line-height: 1.42;
+  line-height: 1.52;
   font-weight: 500;
   letter-spacing: -0.01em;
   max-width: 820px;
-  text-align: left;
-  hyphens: none;
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
   text-transform: uppercase;
   font-size: clamp(1.08rem, 1.7vw, 1.45rem);
   font-weight: 700;
