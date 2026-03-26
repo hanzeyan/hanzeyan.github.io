@@ -77,7 +77,6 @@ permalink: /team/
   <div class="section-head">
     <div>
       <p class="eyebrow">AFFILIATION</p>
-      <h2>Affiliation</h2>
     </div>
   </div>
   <div class="logo-grid">
@@ -97,7 +96,6 @@ permalink: /team/
   <div class="section-head">
     <div>
       <p class="eyebrow">CONSORTIUM</p>
-      <h2>Consortium</h2>
     </div>
   </div>
   <div class="logo-grid">
