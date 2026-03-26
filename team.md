@@ -4,12 +4,6 @@ title: Team
 permalink: /team/
 ---
 
-<section class="page-hero page-hero--compact team-page-hero">
-  <p class="eyebrow">TEAM</p>
-  <h1>LAB MEMBERS</h1>
-  <p>Our team works across computational biology, single-cell and spatial multi-omics, immunology, neuroscience, microbiology, protein engineering and synthetic biology.</p>
-</section>
-
 <section class="section team-section team-section--current">
   <div class="section-head">
     <div>
