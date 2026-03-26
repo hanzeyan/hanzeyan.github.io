@@ -727,3 +727,8 @@ img {
     align-items: flex-start;
   }
 }
+/* Hide only the black titles in the lower two sections */
+.team-section:nth-of-type(3) .section-head h2,
+.team-section:nth-of-type(4) .section-head h2 {
+  display: none;
+}
