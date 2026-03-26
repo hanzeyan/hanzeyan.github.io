@@ -6,7 +6,6 @@ permalink: /publications/
 
 <section class="page-hero page-hero--compact">
   <p class="eyebrow">PUBLICATIONS</p>
-  <h1>PUBLICATIONS &amp; REVIEWS</h1>
   <p># denotes co-first authors; * denotes corresponding authors</p>
   <div class="scholar-row">
     <img src="{{ site.data.site.publications_scholar_image }}" alt="Google Scholar">
