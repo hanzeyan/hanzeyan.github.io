@@ -1,0 +1,60 @@
+- name: Peng Tan
+  role: Assistant Professor, SUSTech
+  lines:
+  - Principal Investigator
+  - Hainan Medical University
+  image: /assets/images/peng-tan.jpg
+  link: https://github.com/tanlab1
+- name: Shiyan Zhang
+  role: Administrative Assistant, SUSTech
+  lines: []
+  image: https://static.wixstatic.com/media/d8287f_5e0f67d50e9d413da7e7afed0802c2b1~mv2.jpg
+- name: Liyong Ma
+  role: Ph.D student, SUSTech
+  lines:
+  - Bachelor of Science, Ocean University of China
+  - Neuroscience
+  - Astrocyte biology; Neuroinflammation
+  image: https://static.wixstatic.com/media/d8287f_a34ee1088ff34271a43e7e627c47e3c9~mv2.png
+- name: Haoyi Yang
+  role: Ph.D student, SUSTech
+  lines:
+  - Master of Science, Shenzhen University
+  - Neuroscience
+  - Pain sensation; Small molecule drug screen
+  image: https://static.wixstatic.com/media/d8287f_d9618ac734b5446abd286abd8f8d5add~mv2.jpg
+- name: Zixin Liu
+  role: Master's student, SUSTech
+  lines:
+  - Bachelor of Science, Shenzhen University
+  - Lung disease
+  - Pulmonary hypertension
+  image: https://static.wixstatic.com/media/d8287f_9d15206b8afc4c3ca2fef83ab94502ab~mv2.jpg
+- name: Runze Zhang
+  role: Master's student, SUSTech
+  lines:
+  - Bachelor of Science, SUSTech
+  - Immunology
+  - Tumor immunology; Mass spectrometry
+  image: https://static.wixstatic.com/media/d8287f_59cd3ae197b3499b878d3634b85e5340~mv2.jpg
+- name: Jiawei Luo
+  role: Master's student, SUSTech
+  lines:
+  - Bachelor of Science, Jilin Agricultural University
+  - Immunology
+  - Innate immunity
+  image: https://static.wixstatic.com/media/d8287f_fa29174d38314edebb0808aeb8368f6b~mv2.jpg
+- name: Mingfu Zhao
+  role: Master's student, SUSTech
+  lines:
+  - Bachelor of Science, Ocean University of China
+  - Microbiology
+  - Tumor microenvironment; Tumor microbiome
+  image: https://static.wixstatic.com/media/d8287f_a737d7da5caf42de848032da5adaea83~mv2.jpg
+- name: Chen Wang
+  role: Visiting PhD student, SUSTech
+  lines:
+  - Master of Science, Shenyang Agricultural University
+  - Preventive veterinary medicine;
+  - Medical synthetic biology
+  image: https://static.wixstatic.com/media/d8287f_3c366c52a7ce40928f0fb9f1b2e6d859~mv2.jpg
