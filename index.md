@@ -9,9 +9,7 @@ title: Home
   </div>
 
   <div class="hero-copy">
-    <p class="eyebrow">{{ site.data.site.lab_name }}</p>
     <h1>{{ site.data.site.intro }}</h1>
-    <p class="hero-text">{{ site.data.site.tagline }}</p>
     <div class="cta-row">
       <a class="button" href="{{ '/research/' | relative_url }}">Explore Research</a>
       <a class="button secondary" href="{{ '/publications/' | relative_url }}">View Publications</a>
