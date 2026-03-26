@@ -995,3 +995,168 @@ img {
     grid-template-columns: 1fr !important;
   }
 }
+/* ===== FINAL OVERRIDE: headings + team layout ===== */
+
+/* 1) Make blue headings larger and black headings smaller across pages */
+.page-hero .eyebrow,
+.section-head .eyebrow,
+.hero-home .eyebrow,
+.team-page-hero .eyebrow,
+.team-section .eyebrow {
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem) !important;
+  line-height: 1.05 !important;
+  font-weight: 700 !important;
+  letter-spacing: .08em !important;
+  text-transform: uppercase !important;
+  color: var(--accent) !important;
+  margin-bottom: 10px !important;
+}
+
+.page-hero h1,
+.section-head h2,
+.team-page-hero h1,
+.team-section .section-head h2 {
+  font-size: clamp(.92rem, 1.05vw, 1rem) !important;
+  line-height: 1.2 !important;
+  font-weight: 500 !important;
+  letter-spacing: .12em !important;
+  text-transform: uppercase !important;
+  color: var(--ink) !important;
+  margin: 0 !important;
+}
+
+/* 2) Team page: remove top intro block if any old block still exists */
+.team-page-hero {
+  display: none !important;
+}
+
+/* 3) Principal Investigator card centered */
+.team-section--current .team-grid--pi {
+  grid-template-columns: 1fr !important;
+  max-width: 420px !important;
+  margin: 0 auto !important;
+  justify-items: center !important;
+}
+
+.team-section--current .member-card--lead {
+  width: 100% !important;
+  max-width: 420px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.team-section--current .member-card--lead .card-body {
+  text-align: center !important;
+}
+
+.team-section--current .member-card--lead .member-avatar {
+  width: 220px !important;
+  height: 280px !important;
+  border-radius: 18px !important;
+  margin: 0 auto 18px !important;
+  background: #fff !important;
+}
+
+.team-section--current .member-card--lead .member-avatar img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center top !important;
+  transform: none !important;
+}
+
+/* 4) Lab members: 3 per row + round avatars */
+.team-section--members .team-grid--members {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+}
+
+.team-section--members .member-card {
+  padding: 20px 18px 18px !important;
+  text-align: center !important;
+  align-items: stretch !important;
+}
+
+.team-section--members .member-avatar {
+  width: 118px !important;
+  height: 118px !important;
+  margin: 0 auto 16px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  border: 1px solid var(--line) !important;
+  background: #f5f7fa !important;
+}
+
+.team-section--members .member-avatar img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 16% !important;
+  transform: scale(1.08) !important;
+  transform-origin: center !important;
+}
+
+.team-section--members .member-card .card-body {
+  text-align: center !important;
+}
+
+.team-section--members .member-card h3 {
+  font-size: 1rem !important;
+  line-height: 1.3 !important;
+  letter-spacing: .01em !important;
+  text-transform: none !important;
+}
+
+.team-section--members .member-meta {
+  margin: 0 0 10px !important;
+  font-size: .86rem !important;
+  line-height: 1.45 !important;
+  text-transform: none !important;
+}
+
+.team-section--members .member-card .card-body p {
+  margin: 0 0 6px !important;
+  font-size: .82rem !important;
+  line-height: 1.55 !important;
+}
+
+/* 5) Responsive */
+@media (max-width: 980px) {
+  .team-section--members .team-grid--members {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-hero .eyebrow,
+  .section-head .eyebrow,
+  .hero-home .eyebrow,
+  .team-page-hero .eyebrow,
+  .team-section .eyebrow {
+    font-size: 1.15rem !important;
+    letter-spacing: .1em !important;
+  }
+
+  .page-hero h1,
+  .section-head h2,
+  .team-page-hero h1,
+  .team-section .section-head h2 {
+    font-size: .9rem !important;
+    line-height: 1.2 !important;
+    letter-spacing: .12em !important;
+  }
+
+  .team-section--members .team-grid--members {
+    grid-template-columns: 1fr !important;
+  }
+
+  .team-section--members .member-avatar {
+    width: 108px !important;
+    height: 108px !important;
+  }
+
+  .team-section--current .member-card--lead .member-avatar {
+    width: 180px !important;
+    height: 230px !important;
+  }
+}
