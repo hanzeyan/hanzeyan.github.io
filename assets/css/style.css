@@ -727,3 +727,12 @@ img {
     align-items: flex-start;
   }
 }
+.pub-journal {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.pub-date {
+  color: var(--muted);
+  font-weight: 500;
+}
