@@ -16,7 +16,6 @@ permalink: /publications/
   <div class="section-head">
     <div>
       <p class="eyebrow">HIGHLIGHT</p>
-      <h2>RESEARCH OVERVIEW</h2>
     </div>
   </div>
   <div class="image-panel publication-feature-figure">
