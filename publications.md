@@ -12,7 +12,6 @@ permalink: /publications/
   </div>
 </section>
 
-
 <section class="section">
   <div class="section-head">
     <div>
@@ -29,14 +28,17 @@ permalink: /publications/
   <div class="section-head">
     <div>
       <p class="eyebrow">ARTICLES</p>
-      <h2>PUBLICATIONS</h2>
     </div>
   </div>
 
   <div class="pub-list">
     {% for item in site.data.publications %}
       <article class="pub-item">
-        <div class="pub-meta">{{ item.journal }} <span>•</span> {{ item.date }}</div>
+        <div class="pub-meta">
+          <span class="pub-journal">{{ item.journal }}</span>
+          <span>•</span>
+          <span class="pub-date">{{ item.date }}</span>
+        </div>
         <div class="pub-title">
           {% if item.url == '#' %}
             {{ item.title }}
@@ -69,7 +71,11 @@ permalink: /publications/
   <div class="review-list">
     {% for item in site.data.reviews %}
       <article class="pub-item">
-        <div class="pub-meta">{{ item.journal }} <span>•</span> {{ item.date }}</div>
+        <div class="pub-meta">
+          <span class="pub-journal">{{ item.journal }}</span>
+          <span>•</span>
+          <span class="pub-date">{{ item.date }}</span>
+        </div>
         <div class="pub-title">
           <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
         </div>
