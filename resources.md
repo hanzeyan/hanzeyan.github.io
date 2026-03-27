@@ -1,62 +1,22 @@
-- category: Neural tissue cell culture
-  items:
-    - Isolation of spinal cord and DRG neuron
-    - Isolation of LMMP and myenteric plexus
-    - Enteric neuronal cell culture
-    - IPSC-derived neural tissue organoid
+---
+layout: default
+title: Resources
+permalink: /resources/
+---
 
-- category: Viral package and gene delivery
-  items:
-    - AAV and systemic delivery for CNS and PNS
-    - Lenti-viral package
-
-- category: Immune cell isolation and culture
-  items:
-    - Bone marrow macrophage culture
-    - Bone marrow DC culture
-    - Neutrophil isolation from BM and periphery
-    - IEL and LP isolation for immune profiling
-    - ER-Hoxb8 system
-
-- category: Immuno-assay
-  items:
-    - Whole mount GI IHC and IF
-
-- category: Gut permeability and motility assay
-  items:
-    - FITC dextran assay
-    - Carmine-red dye assay
-    - PAS staining
-    - Ussing chamber
-
-- category: CRISPR pooled screen
-  items:
-    - Optical pooled screen
-    - IBD & Genome-wide CRISPR library screen
-
-- category: Single-cell RNA sequencing
-  items:
-    - RAISIN
-    - Smartseq2
-    - Cite-seq and cell hashing
-    - 10x
-    - SeqWell
-    - Scifi
-    - Share-seq
-
-- category: Mouse models
-  items:
-    - Food allergy model
-    - IL-4C
-    - DSS colitis model
-    - AIEC infection
-    - EAE model
-    - B16 melanoma model
-    - Prostate cancer xenografts
-
-- category: Spatial transcriptomics
-  items:
-    - STARmap
-    - Visium
-    - Slide-seq
-    - Nanostring
+<section class="section">
+  <div class="resource-grid">
+    {% for block in site.data.resources %}
+      <article class="resource-card">
+        <h3>{{ block.category }}</h3>
+        {% if block.items.size > 0 %}
+        <ul>
+          {% for item in block.items %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
