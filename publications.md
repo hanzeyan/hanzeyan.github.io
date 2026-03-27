@@ -15,15 +15,17 @@ permalink: /publications/
 }
 
 .pub-list .pub-gallery.pub-gallery--featured {
-  display: block !important;
+  display: flex !important;
   width: 100%;
+  justify-content: center;
 }
 
 .pub-list .pub-gallery.pub-gallery--featured img {
-  width: 100%;
-  max-width: 100%;
+  width: 66.666%;
+  max-width: 66.666%;
   max-height: none;
   display: block;
+  margin: 0 auto;
 }
 </style>
 
@@ -76,7 +78,11 @@ permalink: /publications/
         {% if item.images %}
           {% capture article_image_index %}{% increment article_image_count %}{% endcapture %}
           {% assign article_image_index_num = article_image_index | plus: 0 %}
-          {% if article_image_index_num < 4 %}
+          {% assign hide_this_image = false %}
+          {% if item.journal == 'Nucleic Acids Research' or item.journal == 'Advanced Biology' %}
+            {% assign hide_this_image = true %}
+          {% endif %}
+          {% if article_image_index_num < 4 and hide_this_image == false %}
             <div class="pub-gallery pub-gallery--show{% if article_image_index_num == 0 %} pub-gallery--featured{% endif %}">
               {% for img in item.images %}
                 <img src="{{ img | relative_url }}" alt="{{ item.title }} figure {{ forloop.index }}">
