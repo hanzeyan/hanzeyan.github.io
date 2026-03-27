@@ -20,12 +20,12 @@ permalink: /team/
 .team-profile-card {
   display: flex;
   align-items: flex-start;
-  gap: 48px;
+  gap: 44px;
   padding: 8px 0 0;
 }
 
 .team-profile-side {
-  flex: 0 0 340px;
+  flex: 0 0 260px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,12 +33,12 @@ permalink: /team/
 }
 
 .team-profile-photo {
-  width: 340px;
-  height: 340px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
   overflow: hidden;
   background: #fff;
-  margin: 0 0 22px;
+  margin: 0 0 18px;
 }
 
 .team-profile-photo img {
@@ -49,42 +49,37 @@ permalink: /team/
 }
 
 .team-profile-side h3 {
-  margin: 0 0 12px;
-  font-size: 2rem;
+  margin: 0 0 8px;
+  font-size: 1.9rem;
   line-height: 1.2;
   color: var(--ink);
 }
 
 .team-profile-role {
-  margin: 0 0 10px;
-  font-size: 1.1rem;
-  line-height: 1.5;
+  margin: 0 0 6px;
+  font-size: 1rem;
+  line-height: 1.35;
   color: var(--ink);
   font-weight: 700;
 }
 
 .team-profile-meta {
-  margin: 0 0 8px;
-  font-size: 1rem;
-  line-height: 1.7;
+  margin: 0 0 4px;
+  font-size: 0.98rem;
+  line-height: 1.45;
   color: var(--ink);
-}
-
-.team-profile-meta a {
-  color: var(--accent);
-  text-decoration: none;
 }
 
 .team-profile-copy {
   flex: 1 1 auto;
   min-width: 0;
-  padding-top: 8px;
+  padding-top: 4px;
 }
 
 .team-profile-bio {
   margin: 0;
   font-size: 1rem;
-  line-height: 1.9;
+  line-height: 1.7;
   color: var(--muted);
 }
 
@@ -94,10 +89,26 @@ permalink: /team/
   min-height: 12px;
 }
 
+.team-section--alumni .member-card .card-body h3 {
+  margin-bottom: 8px;
+}
+
+.team-section--alumni .member-card .card-body p,
+.team-section--alumni .member-card .member-meta,
+.team-section--alumni .member-card .member-link {
+  margin: 0 0 6px;
+  line-height: 1.4;
+}
+
+.team-section--alumni .member-card .card-body {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
 @media (max-width: 980px) {
   .team-profile-card {
     flex-direction: column;
-    gap: 28px;
+    gap: 26px;
   }
 
   .team-profile-side {
@@ -106,8 +117,8 @@ permalink: /team/
   }
 
   .team-profile-photo {
-    width: 280px;
-    height: 280px;
+    width: 220px;
+    height: 220px;
   }
 
   .team-profile-copy {
@@ -135,7 +146,6 @@ permalink: /team/
       <h3>{{ lead.name }}</h3>
       <p class="team-profile-role">Principal Investigator</p>
       <p class="team-profile-meta">Hainan Medical University</p>
-      <p class="team-profile-meta"><a href="https://github.com/tanlab1" target="_blank" rel="noopener noreferrer">https://github.com/tanlab1</a></p>
     </div>
 
     <div class="team-profile-copy">
