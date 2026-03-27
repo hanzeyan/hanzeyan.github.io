@@ -376,15 +376,11 @@ img {
 
 .pub-meta {
   opacity: 1 !important;
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 12px;
 }
 
 .pub-meta span {
   opacity: 1;
-  margin: 0;
+  margin: 0 6px;
 }
 
 .pub-journal {
@@ -429,21 +425,6 @@ img {
   margin: 0;
   display: block;
   flex: 0 0 auto;
-}
-
-/* Publications page: show the first four article figures, enlarge the first one (Science), keep later figures hidden without deleting data */
-.pub-list .pub-item .pub-gallery {
-  display: none;
-}
-
-.pub-list .pub-item:nth-child(-n+4) .pub-gallery {
-  display: flex;
-  margin-top: 18px;
-}
-
-.pub-list .pub-item:first-child .pub-gallery img {
-  max-width: 320px;
-  max-height: none;
 }
 
 .logo-grid {
@@ -637,10 +618,6 @@ img {
   font-weight: 400;
 }
 
-.member-card--lead .card-body p:first-of-type {
-  font-weight: 700;
-}
-
 .member-card--lead .member-link a {
   text-decoration: none;
 }
@@ -799,5 +776,26 @@ img {
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+
+/* Home research cards: smaller bold titles and avoid desktop line breaks */
+.research-card h3 {
+  font-size: 1rem;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+@media (min-width: 900px) {
+  .research-card h3 {
+    font-size: 0.88rem;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 899px) {
+  .research-card h3 {
+    white-space: normal;
   }
 }
