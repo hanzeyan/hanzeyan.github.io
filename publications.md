@@ -42,17 +42,6 @@ permalink: /publications/
 <section class="section">
   <div class="section-head">
     <div>
-      <p class="eyebrow">HIGHLIGHT</p>
-    </div>
-  </div>
-  <div class="image-panel publication-feature-figure">
-    <img src="{{ '/assets/images/publication-flowchart.jpg' | relative_url }}" alt="Research overview flowchart">
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-head">
-    <div>
       <p class="eyebrow">ARTICLES</p>
     </div>
   </div>
