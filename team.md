@@ -23,9 +23,16 @@ permalink: /team/
       </div>
       <div class="card-body">
         <h3>{{ lead.name }}</h3>
-        {% for line in lead.lines %}
-          <p>{{ line }}</p>
-        {% endfor %}
+        <p><strong>Principal Investigator</strong></p>
+        {% if lead.lines and lead.lines.size > 1 %}
+          {% for line in lead.lines offset:1 %}
+            <p>{{ line }}</p>
+          {% endfor %}
+        {% elsif lead.lines %}
+          {% for line in lead.lines %}
+            <p>{{ line }}</p>
+          {% endfor %}
+        {% endif %}
         {% if lead.link %}
           <p class="member-link">
             <a href="{{ lead.link }}" target="_blank" rel="noopener noreferrer">{{ lead.link }}</a>
@@ -44,7 +51,6 @@ permalink: /team/
   </div>
 
   <div class="team-grid team-grid--members">
-    <!-- 暂时留空，不放人 -->
   </div>
 </section>
 
