@@ -776,3 +776,23 @@ img {
 .member-card--lead .member-link a {
   text-decoration: none;
 }
+.hero-copy {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-home {
+  text-align: center;
+}
+
+.hero-home h1 {
+  max-width: 1100px;
+  margin: 0 auto 18px;
+  text-align: center;
+}
+
+.cta-row {
+  justify-content: center;
+  margin-top: 18px;
+}
