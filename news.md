@@ -4,11 +4,6 @@ title: News
 permalink: /news/
 ---
 
-<section class="page-hero page-hero--compact">
-  <p class="eyebrow">News</p>
-  <h1>Latest updates</h1>
-</section>
-
 <section class="section">
   <div class="post-list">
     {% for post in site.posts %}
