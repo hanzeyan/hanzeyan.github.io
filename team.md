@@ -25,7 +25,7 @@ permalink: /team/
 }
 
 .team-profile-side {
-  flex: 0 0 260px;
+  flex: 0 0 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,8 +33,8 @@ permalink: /team/
 }
 
 .team-profile-photo {
-  width: 260px;
-  height: 260px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   overflow: hidden;
   background: #fff;
@@ -117,8 +117,8 @@ permalink: /team/
   }
 
   .team-profile-photo {
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
   }
 
   .team-profile-copy {
