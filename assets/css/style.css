@@ -780,22 +780,17 @@ img {
 }
 
 
-/* Home research cards: smaller bold titles and avoid desktop line breaks */
+/* Home research card titles */
 .research-card h3 {
   font-size: 1rem;
-  line-height: 1.35;
+  line-height: 1.5;
   letter-spacing: 0;
-}
-
-@media (min-width: 900px) {
-  .research-card h3 {
-    font-size: 0.88rem;
-    white-space: nowrap;
-  }
 }
 
 @media (max-width: 899px) {
   .research-card h3 {
+    font-size: 1rem;
+    line-height: 1.5;
     white-space: normal;
   }
 }
