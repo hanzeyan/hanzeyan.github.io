@@ -159,8 +159,8 @@ img {
 .team-section .eyebrow {
   margin: 0 0 10px;
   color: var(--accent);
-  font-size: clamp(1.45rem, 2.3vw, 1.95rem);
-  line-height: 1.05;
+  font-size: clamp(1.22rem, 1.9vw, 1.45rem);
+  line-height: 1.08;
   font-weight: 700;
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -749,8 +749,8 @@ img {
   .section-head .eyebrow,
   .hero-home .eyebrow,
   .team-section .eyebrow {
-    font-size: 1.15rem;
-    letter-spacing: .1em;
+    font-size: 1.02rem;
+    letter-spacing: .08em;
   }
 
   .team-grid--members {
@@ -800,9 +800,9 @@ img {
 .section-head .eyebrow,
 .team-profile-head .eyebrow,
 .contact-title {
-  font-size: 1.55rem !important;
+  font-size: 1.28rem !important;
   line-height: 1.08 !important;
-  letter-spacing: 0.08em !important;
+  letter-spacing: 0.07em !important;
 }
 
 @media (max-width: 768px) {
@@ -811,7 +811,7 @@ img {
   .section-head .eyebrow,
   .team-profile-head .eyebrow,
   .contact-title {
-    font-size: 1.28rem !important;
-    letter-spacing: 0.07em !important;
+    font-size: 1.04rem !important;
+    letter-spacing: 0.06em !important;
   }
 }
