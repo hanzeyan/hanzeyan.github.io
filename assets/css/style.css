@@ -431,12 +431,12 @@ img {
   flex: 0 0 auto;
 }
 
-/* Publications page: keep and enlarge only the first article figure (Science), hide later article figures without deleting data */
+/* Publications page: show the first four article figures, enlarge the first one (Science), keep later figures hidden without deleting data */
 .pub-list .pub-item .pub-gallery {
   display: none;
 }
 
-.pub-list .pub-item:first-child .pub-gallery {
+.pub-list .pub-item:nth-child(-n+4) .pub-gallery {
   display: flex;
   margin-top: 18px;
 }
