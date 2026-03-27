@@ -4,6 +4,22 @@ title: Publications
 permalink: /publications/
 ---
 
+<style>
+.pub-list .pub-gallery {
+  display: none;
+}
+
+.pub-list .pub-gallery.pub-gallery--show {
+  display: flex !important;
+  margin-top: 18px;
+}
+
+.pub-list .pub-gallery.pub-gallery--featured img {
+  max-width: 320px;
+  max-height: none;
+}
+</style>
+
 <section class="page-hero page-hero--compact">
   <p class="eyebrow">PUBLICATIONS</p>
   <p># denotes co-first authors; * denotes corresponding authors</p>
@@ -49,12 +65,17 @@ permalink: /publications/
         </div>
         <div>{{ item.authors }}</div>
         {% if item.note %}<div class="note">{{ item.note }}</div>{% endif %}
+
         {% if item.images %}
-          <div class="pub-gallery">
-            {% for img in item.images %}
-              <img src="{{ img | relative_url }}" alt="{{ item.title }} figure {{ forloop.index }}">
-            {% endfor %}
-          </div>
+          {% capture article_image_index %}{% increment article_image_count %}{% endcapture %}
+          {% assign article_image_index_num = article_image_index | plus: 0 %}
+          {% if article_image_index_num < 4 %}
+            <div class="pub-gallery pub-gallery--show{% if article_image_index_num == 0 %} pub-gallery--featured{% endif %}">
+              {% for img in item.images %}
+                <img src="{{ img | relative_url }}" alt="{{ item.title }} figure {{ forloop.index }}">
+              {% endfor %}
+            </div>
+          {% endif %}
         {% endif %}
       </article>
     {% endfor %}
