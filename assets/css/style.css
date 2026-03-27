@@ -794,3 +794,24 @@ img {
     white-space: normal;
   }
 }
+/* all blue titles across the whole site */
+.eyebrow,
+.page-hero .eyebrow,
+.section-head .eyebrow,
+.team-profile-head .eyebrow,
+.contact-title {
+  font-size: 1.7rem !important;
+  line-height: 1.08 !important;
+  letter-spacing: 0.08em !important;
+}
+
+@media (max-width: 768px) {
+  .eyebrow,
+  .page-hero .eyebrow,
+  .section-head .eyebrow,
+  .team-profile-head .eyebrow,
+  .contact-title {
+    font-size: 1.28rem !important;
+    letter-spacing: 0.07em !important;
+  }
+}
