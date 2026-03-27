@@ -376,15 +376,11 @@ img {
 
 .pub-meta {
   opacity: 1 !important;
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 12px;
 }
 
 .pub-meta span {
   opacity: 1;
-  margin: 0;
+  margin: 0 6px;
 }
 
 .pub-journal {
@@ -620,6 +616,10 @@ img {
 .member-card--lead .member-line,
 .member-card--lead .member-link a {
   font-weight: 400;
+}
+
+.member-card--lead .card-body p:first-of-type {
+  font-weight: 700;
 }
 
 .member-card--lead .member-link a {
