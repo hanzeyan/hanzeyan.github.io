@@ -7,7 +7,7 @@ permalink: /research/
 <section class="section">
   <div class="section-head">
     <div>
-      <p class="eyebrow">RESEARCH FRAMEWORK</p>
+      <p class="eyebrow">RESEARCH OVERVIEW</p>
     </div>
   </div>
   <div class="stack-list">
