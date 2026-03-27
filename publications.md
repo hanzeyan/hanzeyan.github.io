@@ -65,7 +65,6 @@ permalink: /publications/
   <div class="section-head">
     <div>
       <p class="eyebrow">REVIEWS</p>
-      <h2>BOOK CHAPTER &amp; REVIEW</h2>
     </div>
   </div>
 
