@@ -21,7 +21,6 @@ title: Home
   <div class="section-head">
     <div>
       <p class="eyebrow">Research Area</p>
-      <h2>Focus areas</h2>
     </div>
     <a class="text-link" href="{{ '/research/' | relative_url }}">Read More</a>
   </div>
