@@ -26,6 +26,10 @@ permalink: /team/
 
 .team-profile-side {
   flex: 0 0 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .team-profile-photo {
@@ -98,6 +102,7 @@ permalink: /team/
 
   .team-profile-side {
     flex-basis: auto;
+    width: 100%;
   }
 
   .team-profile-photo {
