@@ -82,6 +82,13 @@ permalink: /publications/
         </div>
         <div>{{ item.authors }}</div>
         {% if item.note %}<div class="note">{{ item.note }}</div>{% endif %}
+        {% if item.images %}
+          <div class="pub-gallery">
+            {% for img in item.images %}
+              <img src="{{ img | relative_url }}" alt="{{ item.title }} figure {{ forloop.index }}">
+            {% endfor %}
+          </div>
+        {% endif %}
       </article>
     {% endfor %}
   </div>
