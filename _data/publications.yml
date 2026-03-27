@@ -16,6 +16,8 @@
   authors: Peng Tan#, Alok Jaiswal#, Shane P. Murphy, Eric M. Brown, Hailey Wheeler,
     Chien-Wen Su, Emily P. Finan, Guadalupe J. Jasso, Hai Ning Shi, Daniel B. Graham,
     Toni M. Delorey, Jacques Deguine, Ramnik J. Xavier
+  images:
+    - /assets/images/science.jpg
 - journal: Nature
   date: Oct 2023
   title: Spatial Atlas of the Mouse Central Nervous System at Molecular Resolution
