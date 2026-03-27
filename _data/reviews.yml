@@ -1,4 +1,17 @@
-- journal: Autophagy Regulation of Innate Immunity p58-78
+- journal: Exploration
+  date: April 2023
+  title: Biomimetic and bioinspired nanotechnology toward cancer vaccines
+  url: https://onlinelibrary.wiley.com/doi/full/10.1002/EXP.20210263
+  authors: ChenChao Feng, Peng Tan, Guangjun Nie, Motao Zhu.
+- journal: Physiological Reviews
+  date: July 2022 (Spotlight cover)
+  title: 'Optophysiology: Illuminating cell physiology with optogenetics'
+  url: https://journals.physiology.org/doi/full/10.1152/physrev.00021.2021
+  authors: Peng Tan#, Lian He#, Yun Huang & Yubin Zhou
+  images:
+    - https://static.wixstatic.com/media/d8287f_222bed4e79104b008dcd53868db03308~mv2.png
+    - https://static.wixstatic.com/media/d8287f_0b71fb06d7d149c1b452d9f53922d879~mv2.jpg
+  - journal: Autophagy Regulation of Innate Immunity p58-78
   date: November 2019
   title: Autophagy and Immune-Related Diseases
   url: https://link.springer.com/chapter/10.1007/978-981-15-0606-2_10
