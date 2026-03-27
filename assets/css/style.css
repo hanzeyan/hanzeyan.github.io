@@ -404,13 +404,13 @@ img {
   color: var(--ink);
 }
 
+/* Publication images centered */
 .pub-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 240px));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
   margin-top: 14px;
-  justify-content: center;
-  justify-items: center;
 }
 
 .pub-gallery img,
@@ -422,7 +422,9 @@ img {
   border: 1px solid var(--line);
   border-radius: 16px;
   background: #fff;
-  margin: 0 auto;
+  margin: 0;
+  display: block;
+  flex: 0 0 auto;
 }
 
 .logo-grid {
@@ -759,10 +761,6 @@ img {
   .member-card--lead .member-avatar {
     width: 180px;
     height: 230px;
-  }
-
-  .pub-gallery {
-    grid-template-columns: repeat(auto-fit, minmax(130px, 180px));
   }
 
   .pub-gallery img,
