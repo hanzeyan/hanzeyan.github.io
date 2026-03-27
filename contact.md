@@ -20,16 +20,6 @@ permalink: /contact/
   font-weight: 700;
 }
 
-.contact-subtitle {
-  margin: 0 0 18px;
-  font-size: 1.05rem;
-  line-height: 1.2;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  color: var(--ink);
-  font-weight: 500;
-}
-
 .contact-list {
   margin: 0;
   padding: 0;
@@ -80,7 +70,6 @@ permalink: /contact/
 
 <section class="section contact-block">
   <h2 class="contact-title">Openings</h2>
-  <h3 class="contact-subtitle">General Search</h3>
 
   <p class="contact-copy">We have openings at all levels and are always looking for great people to join us.</p>
 
