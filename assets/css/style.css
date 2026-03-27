@@ -610,8 +610,12 @@ img {
 .member-card--lead .member-link a {
   font-size: 0.86rem;
   line-height: 1.45;
-  font-weight: 600;
   color: var(--ink);
+}
+
+.member-card--lead .member-line,
+.member-card--lead .member-link a {
+  font-weight: 400;
 }
 
 .member-card--lead .member-link a {
