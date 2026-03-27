@@ -23,17 +23,16 @@ permalink: /team/
         {% endif %}
       </div>
       <div class="card-body">
-        <h3>{{ lead.name }}</h3>
-        <p class="member-meta">{{ lead.role }}</p>
-        {% for line in lead.lines %}
-          <p>{{ line }}</p>
-        {% endfor %}
-        {% if lead.link %}
-          <p class="member-link">
-            <a href="{{ lead.link }}" target="_blank" rel="noopener noreferrer">{{ lead.link }}</a>
-          </p>
-        {% endif %}
-      </div>
+  <h3>{{ lead.name }}</h3>
+  {% for line in lead.lines %}
+    <p>{{ line }}</p>
+  {% endfor %}
+  {% if lead.link %}
+    <p class="member-link">
+      <a href="{{ lead.link }}" target="_blank" rel="noopener noreferrer">{{ lead.link }}</a>
+    </p>
+  {% endif %}
+</div>
     </article>
   </div>
 </section>
