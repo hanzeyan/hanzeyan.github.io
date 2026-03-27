@@ -14,9 +14,16 @@ permalink: /publications/
   margin-top: 18px;
 }
 
+.pub-list .pub-gallery.pub-gallery--featured {
+  display: block !important;
+  width: 100%;
+}
+
 .pub-list .pub-gallery.pub-gallery--featured img {
-  max-width: 320px;
+  width: 100%;
+  max-width: 100%;
   max-height: none;
+  display: block;
 }
 </style>
 
