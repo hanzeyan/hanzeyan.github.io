@@ -167,15 +167,16 @@ img {
 
 .hero-home h1 {
   margin: 0 0 12px;
-  font-size: clamp(1.08rem, 1.7vw, 1.45rem);
-  line-height: 1.48;
-  font-weight: 700;
-  letter-spacing: -0.015em;
   max-width: 920px;
+  font-size: 1.18rem;
+  line-height: 1.55;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--muted);
   text-align: left;
   text-wrap: balance;
   hyphens: none;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .page-hero h1,
@@ -677,8 +678,15 @@ img {
   }
 
   .hero-home h1 {
-    font-size: clamp(1rem, 3.8vw, 1.18rem);
-    line-height: 1.42;
+    font-size: 1.08rem;
+    line-height: 1.55;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--muted);
+    text-align: left;
+    text-wrap: balance;
+    hyphens: none;
+    text-transform: none;
   }
 
   .page-hero h1,
@@ -727,6 +735,7 @@ img {
     align-items: flex-start;
   }
 }
+
 .pub-journal {
   color: var(--ink);
   font-weight: 700;
@@ -736,6 +745,7 @@ img {
   color: var(--muted);
   font-weight: 500;
 }
+
 .pub-meta {
   opacity: 1 !important;
 }
