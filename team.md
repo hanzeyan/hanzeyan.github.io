@@ -23,11 +23,11 @@ permalink: /team/
       </div>
       <div class="card-body">
         <h3>{{ lead.name }}</h3>
-        {% for line in lead.lines offset:1 %}
-          <p class="member-line">{{ line }}</p>
+        {% for line in lead.lines %}
+          <p>{{ line }}</p>
         {% endfor %}
         {% if lead.link %}
-          <p class="member-link member-link--plain">
+          <p class="member-link">
             <a href="{{ lead.link }}" target="_blank" rel="noopener noreferrer">{{ lead.link }}</a>
           </p>
         {% endif %}
@@ -44,29 +44,7 @@ permalink: /team/
   </div>
 
   <div class="team-grid team-grid--members">
-    {% for member in site.data.team offset:1 %}
-      <article class="member-card">
-        <div class="member-avatar">
-          {% if member.image contains "://" %}
-            <img src="{{ member.image }}" alt="{{ member.name }}" loading="lazy">
-          {% else %}
-            <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" loading="lazy">
-          {% endif %}
-        </div>
-        <div class="card-body">
-          <h3>{{ member.name }}</h3>
-          <p class="member-meta">{{ member.role }}</p>
-          {% for line in member.lines %}
-            <p>{{ line }}</p>
-          {% endfor %}
-          {% if member.link %}
-            <p class="member-link">
-              <a href="{{ member.link }}" target="_blank" rel="noopener noreferrer">{{ member.link }}</a>
-            </p>
-          {% endif %}
-        </div>
-      </article>
-    {% endfor %}
+    <!-- 暂时留空，不放人 -->
   </div>
 </section>
 
@@ -78,7 +56,7 @@ permalink: /team/
   </div>
 
   <div class="team-grid team-grid--members">
-    {% for member in site.data.alumni %}
+    {% for member in site.data.team offset:1 %}
       <article class="member-card">
         <div class="member-avatar">
           {% if member.image contains "://" %}
