@@ -20,17 +20,21 @@ permalink: /team/
 .team-profile-card {
   display: flex;
   align-items: flex-start;
-  gap: 42px;
+  gap: 48px;
   padding: 8px 0 0;
 }
 
-.team-profile-photo {
+.team-profile-side {
   flex: 0 0 340px;
+}
+
+.team-profile-photo {
   width: 340px;
   height: 340px;
   border-radius: 50%;
   overflow: hidden;
   background: #fff;
+  margin: 0 0 22px;
 }
 
 .team-profile-photo img {
@@ -40,13 +44,7 @@ permalink: /team/
   display: block;
 }
 
-.team-profile-copy {
-  flex: 1 1 auto;
-  min-width: 0;
-  padding-top: 6px;
-}
-
-.team-profile-copy h3 {
+.team-profile-side h3 {
   margin: 0 0 12px;
   font-size: 2rem;
   line-height: 1.2;
@@ -73,8 +71,14 @@ permalink: /team/
   text-decoration: none;
 }
 
+.team-profile-copy {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-top: 8px;
+}
+
 .team-profile-bio {
-  margin: 16px 0 0;
+  margin: 0;
   font-size: 1rem;
   line-height: 1.9;
   color: var(--muted);
@@ -89,7 +93,11 @@ permalink: /team/
 @media (max-width: 980px) {
   .team-profile-card {
     flex-direction: column;
-    gap: 24px;
+    gap: 28px;
+  }
+
+  .team-profile-side {
+    flex-basis: auto;
   }
 
   .team-profile-photo {
@@ -110,20 +118,22 @@ permalink: /team/
 
   {% assign lead = site.data.team | first %}
   <div class="team-profile-card">
-    <div class="team-profile-photo">
-      {% if lead.image contains "://" %}
-        <img src="{{ lead.image }}" alt="{{ lead.name }}" loading="lazy">
-      {% else %}
-        <img src="{{ lead.image | relative_url }}" alt="{{ lead.name }}" loading="lazy">
-      {% endif %}
-    </div>
+    <div class="team-profile-side">
+      <div class="team-profile-photo">
+        {% if lead.image contains "://" %}
+          <img src="{{ lead.image }}" alt="{{ lead.name }}" loading="lazy">
+        {% else %}
+          <img src="{{ lead.image | relative_url }}" alt="{{ lead.name }}" loading="lazy">
+        {% endif %}
+      </div>
 
-    <div class="team-profile-copy">
       <h3>{{ lead.name }}</h3>
       <p class="team-profile-role">Principal Investigator</p>
       <p class="team-profile-meta">Hainan Medical University</p>
       <p class="team-profile-meta"><a href="https://github.com/tanlab1" target="_blank" rel="noopener noreferrer">https://github.com/tanlab1</a></p>
+    </div>
 
+    <div class="team-profile-copy">
       <p class="team-profile-bio">Dr. Peng Tan is a professor at Hainan Academy of Medical Sciences, Hainan Medical University. He earned his Ph.D. from Texas A&amp;M University (2018) and conducted off-campus research at Weill Cornell Medical College-Houston campus. He then joined Klarman Cell Observatory, Broad Institute of MIT and Harvard as a postdoctoral associate with professors Aviv Regev and Ramnik Xavier. He was the recipient of Student Research Award and IBD Plexus Award from the Crohn's &amp; Colitis Foundation of America. He has published over 40 publications, including first or corresponding author articles in premier journals (Science, Nature Chemical Biology, Physiological Reviews, Nucleic Acids Research, Molecular Cell, Journal of Clinical Investigation, PLoS Biology, PLoS Pathogens, Oncogene, etc), and contributed significantly to publications in Nature, Nature Medicine, Nature Cell Biology, Cell Host &amp; Microbe, and Immunity, with a total citation of over 4250 and an h-index of 29. His work has been featured or highlighted in multiple media outlets and in journals. As an immuno-oncologist and neuroscientist, Dr. Tan seeks to understand inflammation and disease including cancer across space and time. He investigates how the nervous system mediates long-range organ-organ communications and interacts with the immune system in relation to disease progression. This is achieved through developing and applying interdisciplinary technologies such as proximity-labelling and proteomics, optogenetics, single-cell and spatial multi-omics. He designs molecular perturbations including in vivo Perturb-seq and light-switches to study biological processes and the quantitative consequences at single-cell and systems level.</p>
     </div>
   </div>
