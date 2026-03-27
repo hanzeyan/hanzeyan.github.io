@@ -376,11 +376,15 @@ img {
 
 .pub-meta {
   opacity: 1 !important;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .pub-meta span {
   opacity: 1;
-  margin: 0 6px;
+  margin: 0;
 }
 
 .pub-journal {
@@ -425,6 +429,21 @@ img {
   margin: 0;
   display: block;
   flex: 0 0 auto;
+}
+
+/* Publications page: keep and enlarge only the first article figure (Science), hide later article figures without deleting data */
+.pub-list .pub-item .pub-gallery {
+  display: none;
+}
+
+.pub-list .pub-item:first-child .pub-gallery {
+  display: flex;
+  margin-top: 18px;
+}
+
+.pub-list .pub-item:first-child .pub-gallery img {
+  max-width: 320px;
+  max-height: none;
 }
 
 .logo-grid {
