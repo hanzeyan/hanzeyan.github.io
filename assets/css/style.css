@@ -765,3 +765,14 @@ img {
 .pub-meta span {
   opacity: 1 !important;
 }
+.member-card--lead .card-body p,
+.member-card--lead .member-link a {
+  font-size: 0.86rem;
+  line-height: 1.45;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.member-card--lead .member-link a {
+  text-decoration: none;
+}
