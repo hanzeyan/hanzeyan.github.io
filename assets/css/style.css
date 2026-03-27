@@ -147,8 +147,9 @@ img {
 }
 
 .hero-copy {
-  max-width: 920px;
+  max-width: 1100px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .eyebrow,
@@ -165,15 +166,19 @@ img {
   text-transform: uppercase;
 }
 
+.hero-home {
+  text-align: center;
+}
+
 .hero-home h1 {
-  margin: 0 0 12px;
-  max-width: 920px;
+  margin: 0 auto 18px;
+  max-width: 1100px;
   font-size: 1.18rem;
   line-height: 1.55;
   font-weight: 400;
   letter-spacing: 0;
   color: var(--muted);
-  text-align: left;
+  text-align: center;
   text-wrap: balance;
   hyphens: none;
   text-transform: none;
@@ -249,7 +254,8 @@ img {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-  margin-top: 14px;
+  margin-top: 18px;
+  justify-content: center;
 }
 
 .button {
@@ -368,9 +374,30 @@ img {
   border-bottom: none;
 }
 
+.pub-meta {
+  opacity: 1 !important;
+}
+
 .pub-meta span {
-  opacity: .4;
+  opacity: 1;
   margin: 0 6px;
+}
+
+.pub-journal {
+  color: #000 !important;
+  font-weight: 900 !important;
+  font-size: 1.18rem !important;
+  line-height: 1.2 !important;
+  opacity: 1 !important;
+  letter-spacing: 0 !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+.pub-date {
+  color: var(--muted) !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  opacity: 1 !important;
 }
 
 .pub-title a {
@@ -382,7 +409,8 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(160px, 240px));
   gap: 12px;
   margin-top: 14px;
-  justify-content: start;
+  justify-content: center;
+  justify-items: center;
 }
 
 .pub-gallery img,
@@ -394,6 +422,7 @@ img {
   border: 1px solid var(--line);
   border-radius: 16px;
   background: #fff;
+  margin: 0 auto;
 }
 
 .logo-grid {
@@ -575,6 +604,18 @@ img {
   font-size: .82rem;
 }
 
+.member-card--lead .card-body p,
+.member-card--lead .member-link a {
+  font-size: 0.86rem;
+  line-height: 1.45;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.member-card--lead .member-link a {
+  text-decoration: none;
+}
+
 .team-section .logo-card {
   min-height: 110px;
 }
@@ -644,7 +685,7 @@ img {
   }
 
   .hero-home h1 {
-    text-align: left;
+    text-align: center;
     text-wrap: balance;
     hyphens: none;
   }
@@ -683,7 +724,7 @@ img {
     font-weight: 400;
     letter-spacing: 0;
     color: var(--muted);
-    text-align: left;
+    text-align: center;
     text-wrap: balance;
     hyphens: none;
     text-transform: none;
@@ -734,81 +775,4 @@ img {
     flex-direction: column;
     align-items: flex-start;
   }
-}
-
-.pub-journal {
-  color: var(--ink);
-  font-weight: 700;
-}
-
-.pub-date {
-  color: var(--muted);
-  font-weight: 500;
-}
-
-.pub-meta {
-  opacity: 1 !important;
-}
-
-.pub-meta .pub-journal {
-  color: #000 !important;
-  font-weight: 700 !important;
-  opacity: 1 !important;
-}
-
-.pub-meta .pub-date {
-  color: var(--muted) !important;
-  font-weight: 500 !important;
-  opacity: 1 !important;
-}
-
-.pub-meta span {
-  opacity: 1 !important;
-}
-.member-card--lead .card-body p,
-.member-card--lead .member-link a {
-  font-size: 0.86rem;
-  line-height: 1.45;
-  font-weight: 600;
-  color: var(--ink);
-}
-
-.member-card--lead .member-link a {
-  text-decoration: none;
-}
-.hero-copy {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.hero-home {
-  text-align: center;
-}
-
-.hero-home h1 {
-  max-width: 1100px;
-  margin: 0 auto 18px;
-  text-align: center;
-}
-
-.cta-row {
-  justify-content: center;
-  margin-top: 18px;
-}
-.pub-meta .pub-journal {
-  color: #000 !important;
-  font-weight: 900 !important;
-  font-size: 1.18rem !important;
-  line-height: 1.2 !important;
-  opacity: 1 !important;
-  letter-spacing: 0 !important;
-  -webkit-text-fill-color: #000 !important;
-}
-
-.pub-meta .pub-date {
-  color: var(--muted) !important;
-  font-weight: 500 !important;
-  font-size: 1rem !important;
-  opacity: 1 !important;
 }
