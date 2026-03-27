@@ -8,10 +8,10 @@ permalink: /publications/
   <p class="eyebrow">PUBLICATIONS</p>
   <p># denotes co-first authors; * denotes corresponding authors</p>
   <div class="scholar-row">
-  <a href="https://scholar.google.com/citations?user=i6kV0H8AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">
-    <img src="{{ site.data.site.publications_scholar_image }}" alt="Google Scholar">
-  </a>
-</div>
+    <a href="https://scholar.google.com/citations?user=i6kV0H8AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">
+      <img src="{{ site.data.site.publications_scholar_image }}" alt="Google Scholar">
+    </a>
+  </div>
 </section>
 
 <section class="section">
@@ -52,7 +52,7 @@ permalink: /publications/
         {% if item.images %}
           <div class="pub-gallery">
             {% for img in item.images %}
-              <img src="{{ img }}" alt="{{ item.title }} figure {{ forloop.index }}">
+              <img src="{{ img | relative_url }}" alt="{{ item.title }} figure {{ forloop.index }}">
             {% endfor %}
           </div>
         {% endif %}
