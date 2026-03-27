@@ -796,3 +796,19 @@ img {
   justify-content: center;
   margin-top: 18px;
 }
+.pub-meta .pub-journal {
+  color: #000 !important;
+  font-weight: 900 !important;
+  font-size: 1.18rem !important;
+  line-height: 1.2 !important;
+  opacity: 1 !important;
+  letter-spacing: 0 !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+.pub-meta .pub-date {
+  color: var(--muted) !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  opacity: 1 !important;
+}
