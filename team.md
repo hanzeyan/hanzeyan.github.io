@@ -7,8 +7,7 @@ permalink: /team/
 <section class="section team-section team-section--current">
   <div class="section-head">
     <div>
-      <p class="eyebrow">TEAM</p>
-      <h2>Principal Investigator</h2>
+      <p class="eyebrow">PRINCIPAL INVESTIGATOR</p>
     </div>
   </div>
 
@@ -23,16 +22,16 @@ permalink: /team/
         {% endif %}
       </div>
       <div class="card-body">
-  <h3>{{ lead.name }}</h3>
-  {% for line in lead.lines %}
-    <p>{{ line }}</p>
-  {% endfor %}
-  {% if lead.link %}
-    <p class="member-link">
-      <a href="{{ lead.link }}" target="_blank" rel="noopener noreferrer">{{ lead.link }}</a>
-    </p>
-  {% endif %}
-</div>
+        <h3>{{ lead.name }}</h3>
+        {% for line in lead.lines offset:1 %}
+          <p class="member-line">{{ line }}</p>
+        {% endfor %}
+        {% if lead.link %}
+          <p class="member-link member-link--plain">
+            <a href="{{ lead.link }}" target="_blank" rel="noopener noreferrer">{{ lead.link }}</a>
+          </p>
+        {% endif %}
+      </div>
     </article>
   </div>
 </section>
@@ -40,8 +39,7 @@ permalink: /team/
 <section class="section team-section team-section--members">
   <div class="section-head">
     <div>
-      <p class="eyebrow">TEAM</p>
-      <h2>Lab Members</h2>
+      <p class="eyebrow">LAB MEMBERS</p>
     </div>
   </div>
 
@@ -72,21 +70,36 @@ permalink: /team/
   </div>
 </section>
 
-<section class="section team-section">
+<section class="section team-section team-section--alumni">
   <div class="section-head">
     <div>
-      <p class="eyebrow">AFFILIATION</p>
+      <p class="eyebrow">ALUMNI</p>
     </div>
   </div>
-  <div class="logo-grid">
-    {% for item in site.data.affiliations %}
-      <div class="logo-card">
-        {% if item.image contains "://" %}
-          <img src="{{ item.image }}" alt="{{ item.title }}">
-        {% else %}
-          <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
-        {% endif %}
-      </div>
+
+  <div class="team-grid team-grid--members">
+    {% for member in site.data.alumni %}
+      <article class="member-card">
+        <div class="member-avatar">
+          {% if member.image contains "://" %}
+            <img src="{{ member.image }}" alt="{{ member.name }}" loading="lazy">
+          {% else %}
+            <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" loading="lazy">
+          {% endif %}
+        </div>
+        <div class="card-body">
+          <h3>{{ member.name }}</h3>
+          <p class="member-meta">{{ member.role }}</p>
+          {% for line in member.lines %}
+            <p>{{ line }}</p>
+          {% endfor %}
+          {% if member.link %}
+            <p class="member-link">
+              <a href="{{ member.link }}" target="_blank" rel="noopener noreferrer">{{ member.link }}</a>
+            </p>
+          {% endif %}
+        </div>
+      </article>
     {% endfor %}
   </div>
 </section>
