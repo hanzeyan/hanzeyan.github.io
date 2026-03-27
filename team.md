@@ -4,42 +4,128 @@ title: Team
 permalink: /team/
 ---
 
-<section class="section team-section team-section--current">
-  <div class="section-head">
-    <div>
-      <p class="eyebrow">PRINCIPAL INVESTIGATOR</p>
-    </div>
+<style>
+.team-profile-block {
+  margin: 0 0 28px;
+}
+
+.team-profile-head {
+  margin: 0 0 20px;
+}
+
+.team-profile-head .eyebrow {
+  margin: 0;
+}
+
+.team-profile-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 42px;
+  padding: 8px 0 0;
+}
+
+.team-profile-photo {
+  flex: 0 0 340px;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
+}
+
+.team-profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.team-profile-copy {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-top: 6px;
+}
+
+.team-profile-copy h3 {
+  margin: 0 0 12px;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.team-profile-role {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.team-profile-meta {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.team-profile-meta a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.team-profile-bio {
+  margin: 16px 0 0;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--muted);
+}
+
+.team-grid--members:empty::before {
+  content: "";
+  display: block;
+  min-height: 12px;
+}
+
+@media (max-width: 980px) {
+  .team-profile-card {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .team-profile-photo {
+    width: 280px;
+    height: 280px;
+  }
+
+  .team-profile-copy {
+    padding-top: 0;
+  }
+}
+</style>
+
+<section class="team-profile-block">
+  <div class="team-profile-head">
+    <p class="eyebrow">PRINCIPAL INVESTIGATOR</p>
   </div>
 
   {% assign lead = site.data.team | first %}
-  <div class="team-grid team-grid--pi">
-    <article class="member-card member-card--lead">
-      <div class="member-avatar">
-        {% if lead.image contains "://" %}
-          <img src="{{ lead.image }}" alt="{{ lead.name }}" loading="lazy">
-        {% else %}
-          <img src="{{ lead.image | relative_url }}" alt="{{ lead.name }}" loading="lazy">
-        {% endif %}
-      </div>
-      <div class="card-body">
-        <h3>{{ lead.name }}</h3>
-        <p><strong>Principal Investigator</strong></p>
-        {% if lead.lines and lead.lines.size > 1 %}
-          {% for line in lead.lines offset:1 %}
-            <p>{{ line }}</p>
-          {% endfor %}
-        {% elsif lead.lines %}
-          {% for line in lead.lines %}
-            <p>{{ line }}</p>
-          {% endfor %}
-        {% endif %}
-        {% if lead.link %}
-          <p class="member-link">
-            <a href="{{ lead.link }}" target="_blank" rel="noopener noreferrer">{{ lead.link }}</a>
-          </p>
-        {% endif %}
-      </div>
-    </article>
+  <div class="team-profile-card">
+    <div class="team-profile-photo">
+      {% if lead.image contains "://" %}
+        <img src="{{ lead.image }}" alt="{{ lead.name }}" loading="lazy">
+      {% else %}
+        <img src="{{ lead.image | relative_url }}" alt="{{ lead.name }}" loading="lazy">
+      {% endif %}
+    </div>
+
+    <div class="team-profile-copy">
+      <h3>{{ lead.name }}</h3>
+      <p class="team-profile-role">Principal Investigator</p>
+      <p class="team-profile-meta">Hainan Medical University</p>
+      <p class="team-profile-meta"><a href="https://github.com/tanlab1" target="_blank" rel="noopener noreferrer">https://github.com/tanlab1</a></p>
+
+      <p class="team-profile-bio">Dr. Peng Tan is a professor at Hainan Academy of Medical Sciences, Hainan Medical University. He earned his Ph.D. from Texas A&amp;M University (2018) and conducted off-campus research at Weill Cornell Medical College-Houston campus. He then joined Klarman Cell Observatory, Broad Institute of MIT and Harvard as a postdoctoral associate with professors Aviv Regev and Ramnik Xavier. He was the recipient of Student Research Award and IBD Plexus Award from the Crohn's &amp; Colitis Foundation of America. He has published over 40 publications, including first or corresponding author articles in premier journals (Science, Nature Chemical Biology, Physiological Reviews, Nucleic Acids Research, Molecular Cell, Journal of Clinical Investigation, PLoS Biology, PLoS Pathogens, Oncogene, etc), and contributed significantly to publications in Nature, Nature Medicine, Nature Cell Biology, Cell Host &amp; Microbe, and Immunity, with a total citation of over 4250 and an h-index of 29. His work has been featured or highlighted in multiple media outlets and in journals. As an immuno-oncologist and neuroscientist, Dr. Tan seeks to understand inflammation and disease including cancer across space and time. He investigates how the nervous system mediates long-range organ-organ communications and interacts with the immune system in relation to disease progression. This is achieved through developing and applying interdisciplinary technologies such as proximity-labelling and proteomics, optogenetics, single-cell and spatial multi-omics. He designs molecular perturbations including in vivo Perturb-seq and light-switches to study biological processes and the quantitative consequences at single-cell and systems level.</p>
+    </div>
   </div>
 </section>
 
