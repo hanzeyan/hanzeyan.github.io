@@ -4,17 +4,10 @@ title: Research
 permalink: /research/
 ---
 
-<section class="page-hero page-hero--compact">
-  <p class="eyebrow">RESEARCH</p>
-  <h1>SPATIOTEMPORAL DYNAMICS OF INFLAMMATION</h1>
-  <p class="muted"><strong>CLICK ON THE GREY ICONS FOR MORE DETAILS.</strong></p>
-</section>
-
 <section class="section">
   <div class="section-head">
     <div>
-      <p class="eyebrow">OVERVIEW</p>
-      <h2>RESEARCH FRAMEWORK</h2>
+      <p class="eyebrow">RESEARCH FRAMEWORK</p>
     </div>
   </div>
   <div class="stack-list">
