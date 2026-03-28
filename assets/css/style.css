@@ -99,10 +99,10 @@ img {
   color: var(--ink);
   padding: 8px 10px;
   border-radius: 999px;
-  font-size: .90rem;
+  font-size: 0.9rem;
   line-height: 1.1;
   text-transform: uppercase;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
 }
 
 .site-nav a:hover,
@@ -133,6 +133,7 @@ img {
 .hero-home {
   padding: 24px 24px 28px;
   margin-bottom: 22px;
+  text-align: center;
 }
 
 .hero-visual {
@@ -159,15 +160,18 @@ img {
 .team-section .eyebrow {
   margin: 0 0 10px;
   color: var(--accent);
-  font-size: clamp(1.02rem, 1.45vw, 1.2rem);
+  font-size: 1.12rem;
   line-height: 1.08;
   font-weight: 700;
-  letter-spacing: .06em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
-.hero-home {
-  text-align: center;
+.team-profile-head .eyebrow,
+.contact-title {
+  font-size: 1.12rem;
+  line-height: 1.08;
+  letter-spacing: 0.06em;
 }
 
 .hero-home h1 {
@@ -188,10 +192,10 @@ img {
 .section-head h2,
 .team-section .section-head h2 {
   margin: 0;
-  font-size: clamp(.96rem, 1.15vw, 1.06rem);
+  font-size: clamp(0.96rem, 1.15vw, 1.06rem);
   line-height: 1.2;
   font-weight: 500;
-  letter-spacing: .12em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink);
   text-align: left;
@@ -233,9 +237,9 @@ img {
 
 .hero-text {
   margin: 0 0 14px;
-  font-size: .84rem;
+  font-size: 0.84rem;
   line-height: 1.55;
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
 }
 
 .feature-image-wrap {
@@ -360,7 +364,7 @@ img {
 .pub-meta {
   color: var(--accent);
   font-weight: 700;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-bottom: 8px;
 }
 
@@ -408,7 +412,6 @@ img {
   color: var(--ink);
 }
 
-/* Publication images centered */
 .pub-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -477,7 +480,7 @@ img {
 
 .image-caption {
   padding: 10px 14px;
-  font-size: .92rem;
+  font-size: 0.92rem;
   color: var(--muted);
   border-top: 1px solid var(--line);
 }
@@ -585,13 +588,13 @@ img {
   margin: 0 0 8px;
   font-size: 1rem;
   line-height: 1.32;
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
   text-transform: none;
 }
 
 .member-meta {
   margin: 0 0 10px;
-  font-size: .86rem;
+  font-size: 0.86rem;
   line-height: 1.45;
   color: var(--accent);
   font-weight: 600;
@@ -600,14 +603,14 @@ img {
 
 .member-card .card-body p {
   margin: 0 0 6px;
-  font-size: .82rem;
+  font-size: 0.82rem;
   line-height: 1.55;
   color: var(--ink);
 }
 
 .member-link a {
   word-break: break-word;
-  font-size: .82rem;
+  font-size: 0.82rem;
 }
 
 .member-card--lead .card-body p,
@@ -647,11 +650,11 @@ img {
   gap: 12px;
   align-items: center;
   flex-wrap: wrap;
-  font-size: .94rem;
+  font-size: 0.94rem;
 }
 
 .footer-dot {
-  opacity: .4;
+  opacity: 0.4;
   margin: 0 8px;
 }
 
@@ -660,6 +663,13 @@ img {
   max-width: none;
   height: auto;
   display: block;
+}
+
+/* Home research card titles */
+.research-card h3 {
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0;
 }
 
 /* Responsive */
@@ -698,6 +708,14 @@ img {
     text-align: center;
     text-wrap: balance;
     hyphens: none;
+  }
+}
+
+@media (max-width: 899px) {
+  .research-card h3 {
+    font-size: 1rem;
+    line-height: 1.5;
+    white-space: normal;
   }
 }
 
@@ -743,18 +761,20 @@ img {
   .page-hero h1,
   .section-head h2,
   .team-section .section-head h2 {
-    font-size: .9rem;
+    font-size: 0.9rem;
     line-height: 1.22;
-    letter-spacing: .12em;
+    letter-spacing: 0.12em;
   }
 
   .eyebrow,
   .page-hero .eyebrow,
   .section-head .eyebrow,
   .hero-home .eyebrow,
-  .team-section .eyebrow {
+  .team-section .eyebrow,
+  .team-profile-head .eyebrow,
+  .contact-title {
     font-size: 0.92rem;
-    letter-spacing: .06em;
+    letter-spacing: 0.06em;
   }
 
   .team-grid--members {
@@ -780,42 +800,5 @@ img {
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
-  }
-}
-
-
-/* Home research card titles */
-.research-card h3 {
-  font-size: 1rem;
-  line-height: 1.5;
-  letter-spacing: 0;
-}
-
-@media (max-width: 899px) {
-  .research-card h3 {
-    font-size: 1rem;
-    line-height: 1.5;
-    white-space: normal;
-  }
-}
-/* all blue titles across the whole site */
-.eyebrow,
-.page-hero .eyebrow,
-.section-head .eyebrow,
-.team-profile-head .eyebrow,
-.contact-title {
-  font-size: 1.12rem !important;
-  line-height: 1.08 !important;
-  letter-spacing: 0.06em !important;
-}
-
-@media (max-width: 768px) {
-  .eyebrow,
-  .page-hero .eyebrow,
-  .section-head .eyebrow,
-  .team-profile-head .eyebrow,
-  .contact-title {
-    font-size: 0.92rem !important;
-    letter-spacing: 0.06em !important;
   }
 }
