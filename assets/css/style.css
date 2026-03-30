@@ -819,3 +819,9 @@ img {
     letter-spacing: 0.06em !important;
   }
 }
+
+
+/* home research card paragraph spacing */
+.research-card .card-body p {
+  line-height: 1.15;
+}
