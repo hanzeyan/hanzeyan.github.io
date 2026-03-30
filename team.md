@@ -20,12 +20,12 @@ permalink: /team/
 .team-profile-card {
   display: flex;
   align-items: flex-start;
-  gap: 44px;
+  gap: 36px;
   padding: 8px 0 0;
 }
 
 .team-profile-side {
-  flex: 0 0 180px;
+  flex: 0 0 240px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,12 +33,12 @@ permalink: /team/
 }
 
 .team-profile-photo {
-  width: 180px;
-  height: 180px;
+  width: 118px;
+  height: 118px;
   border-radius: 50%;
   overflow: hidden;
   background: #fff;
-  margin: 0 0 18px;
+  margin: 0 0 16px;
 }
 
 .team-profile-photo img {
@@ -50,36 +50,38 @@ permalink: /team/
 
 .team-profile-side h3 {
   margin: 0 0 8px;
-  font-size: 1.9rem;
-  line-height: 1.2;
+  font-size: 1rem;
+  line-height: 1.32;
+  letter-spacing: 0.01em;
   color: var(--ink);
 }
 
 .team-profile-role {
   margin: 0 0 6px;
-  font-size: 1rem;
-  line-height: 1.35;
+  font-size: 0.86rem;
+  line-height: 1.45;
   color: var(--ink);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .team-profile-meta {
-  margin: 0 0 4px;
-  font-size: 0.98rem;
-  line-height: 1.45;
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.55;
   color: var(--ink);
 }
 
 .team-profile-copy {
-  flex: 1 1 auto;
+  flex: 0 1 760px;
+  max-width: 760px;
   min-width: 0;
-  padding-top: 4px;
+  padding-top: 2px;
 }
 
 .team-profile-bio {
   margin: 0;
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.55;
   color: var(--muted);
 }
 
@@ -117,11 +119,12 @@ permalink: /team/
   }
 
   .team-profile-photo {
-    width: 180px;
-    height: 180px;
+    width: 118px;
+    height: 118px;
   }
 
   .team-profile-copy {
+    max-width: 100%;
     padding-top: 0;
   }
 }
