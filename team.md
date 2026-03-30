@@ -67,7 +67,7 @@ permalink: /team/
 .team-profile-meta {
   margin: 0;
   font-size: 0.82rem;
-  line-height: 1.55;
+  line-height: 1.18;
   color: var(--ink);
 }
 
@@ -81,7 +81,7 @@ permalink: /team/
 .team-profile-bio {
   margin: 0;
   font-size: 1rem;
-  line-height: 1.55;
+  line-height: 1.18;
   color: var(--muted);
 }
 
