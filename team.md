@@ -98,14 +98,14 @@ permalink: /team/
 
 .team-section--alumni .member-card .card-body h3 {
   margin: 0 0 6px;
-  line-height: 1.15;
+  line-height: 1.08;
 }
 
 .team-section--alumni .member-card .card-body p,
 .team-section--alumni .member-card .member-meta,
 .team-section--alumni .member-card .member-link {
-  margin: 0 0 4px;
-  line-height: 1.15;
+  margin: 0 0 2px;
+  line-height: 1.08;
 }
 
 .team-section--alumni .member-card .card-body p:last-child,
