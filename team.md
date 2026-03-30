@@ -67,7 +67,7 @@ permalink: /team/
 .team-profile-meta {
   margin: 0;
   font-size: 0.82rem;
-  line-height: 1.18;
+  line-height: 1.55;
   color: var(--ink);
 }
 
@@ -81,7 +81,7 @@ permalink: /team/
 .team-profile-bio {
   margin: 0;
   font-size: 1rem;
-  line-height: 1.18;
+  line-height: 1.55;
   color: var(--muted);
 }
 
@@ -91,20 +91,26 @@ permalink: /team/
   min-height: 12px;
 }
 
+.team-section--alumni .member-card .card-body {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
 .team-section--alumni .member-card .card-body h3 {
-  margin-bottom: 8px;
+  margin: 0 0 6px;
+  line-height: 1.15;
 }
 
 .team-section--alumni .member-card .card-body p,
 .team-section--alumni .member-card .member-meta,
 .team-section--alumni .member-card .member-link {
-  margin: 0 0 6px;
-  line-height: 1.4;
+  margin: 0 0 4px;
+  line-height: 1.15;
 }
 
-.team-section--alumni .member-card .card-body {
-  padding-top: 18px;
-  padding-bottom: 18px;
+.team-section--alumni .member-card .card-body p:last-child,
+.team-section--alumni .member-card .member-link:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 980px) {
