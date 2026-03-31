@@ -1,7 +1,7 @@
 title: TAN LAB
 description: From basic neuroimmunology to engineering
-url: "https://hanzeyan.github.io"
-baseurl: ""
+url: "https://tanpenglab.github.io"
+baseurl: "/tanpenglab"
 markdown: kramdown
 permalink: pretty
 timezone: Asia/Shanghai
